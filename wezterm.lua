@@ -10,6 +10,7 @@ config.window_background_opacity = 0.95
 -- general
 config.window_close_confirmation = 'NeverPrompt'
 config.enable_tab_bar = false
+config.window_decorations = 'NONE'
 
 --font
 config.font = wezterm.font 'FiraCode Nerd Font'
