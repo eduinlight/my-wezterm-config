@@ -14,10 +14,8 @@ config.window_decorations = 'RESIZE'
 config.max_fps = 144
 
 --font
-local firacode = wezterm.font('FiraCode Nerd Font', {
-  weight = 'Medium',
-  italic = false,
-  stretch = 'Expanded',
+local firacode = wezterm.font('Fira Code', {
+  weight = "Medium", stretch = "Normal", style = "Normal"
 })
 config.font = firacode
 config.font_size = 10.0
