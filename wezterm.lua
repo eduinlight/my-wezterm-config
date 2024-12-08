@@ -11,11 +11,19 @@ config.window_background_opacity = 0.95
 config.window_close_confirmation = 'NeverPrompt'
 config.enable_tab_bar = false
 config.window_decorations = 'RESIZE'
+config.max_fps = 144
 
 --font
-config.font = wezterm.font 'FiraCode Nerd Font'
-config.font_size = 11.0
+local firacode = wezterm.font('FiraCode Nerd Font', {
+  weight = 'Medium',
+  italic = false,
+  stretch = 'Expanded',
+})
+config.font = firacode
+config.font_size = 10.0
+config.freetype_load_target = "Normal"
+-- ligatures
 -- config.harfbuzz_features = { 'zero' }
+-- no ligatures
 config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }
-
 return config
